@@ -1,8 +1,10 @@
 package com.example.portfolioapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.row1.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,6 +13,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //RoundedBitmapDrawable drawable = RoundedBitmapDrawableFactory.create(getResources(),your_bitmap)
-        //test.bringToFront()
+        myImge.bringToFront()
+
+        youtube.setOnClickListener {
+            Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
+        }
     }
 }
