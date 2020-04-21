@@ -19,13 +19,6 @@ class MainActivity : AppCompatActivity() {
         myImge.bringToFront()
 
         showLinks()
-//        youtube.setOnClickListener {
-//
-//            val intent = Intent(Intent.ACTION_VIEW,
-//                Uri.parse("http://www.youtube.com"))
-//
-//            startActivity(intent)
-//        }
 
 
     }
