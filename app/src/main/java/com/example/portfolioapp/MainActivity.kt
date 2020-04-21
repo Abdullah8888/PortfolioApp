@@ -9,6 +9,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.row1.*
 import kotlinx.android.synthetic.main.row2.*
 import kotlinx.android.synthetic.main.row3.*
+import kotlinx.android.synthetic.main.row4.*
+import kotlinx.android.synthetic.main.row5.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -158,6 +160,72 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.amazon.com/"))
+
+            startActivity(intent)
+        }
+
+        //row4
+        ebay.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://www.ebay.com"))
+
+            startActivity(intent)
+        }
+
+        slack.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://www.slack.com"))
+
+            startActivity(intent)
+        }
+
+        tumblr.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.tumblr.com/"))
+
+            startActivity(intent)
+        }
+
+        wechat.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.wechat.com/"))
+
+            startActivity(intent)
+        }
+
+        //row5
+        pinterest.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.pinterest.com/"))
+
+            startActivity(intent)
+        }
+
+        viber.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.viber.com/en/"))
+
+            startActivity(intent)
+        }
+
+        zipline.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://line.me/en-US/"))
+
+            startActivity(intent)
+        }
+
+        snapchat.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.snapchat.com/"))
 
             startActivity(intent)
         }
