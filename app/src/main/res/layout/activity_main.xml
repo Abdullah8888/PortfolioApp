@@ -31,7 +31,7 @@
 
         <TextView
 
-            android:text="I'm a mobile developer"
+            android:text="Mobile Dev"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorWhite"
@@ -41,7 +41,7 @@
 
         <TextView
             android:layout_marginTop="10dp"
-            android:text="An enthusiast in machine learning, curious and innovative"
+            android:text="Love to translate business, ideas and innovation into reality with the aid Technology"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorWhite"

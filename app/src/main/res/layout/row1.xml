@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/youtube"
             android:layout_gravity="center"
+            android:clickable="true"
 
             />
         <TextView
@@ -35,6 +36,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/whatsap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/whatsapp"
@@ -57,6 +59,7 @@
         >
 
         <ImageView
+            android:id="@+id/bitbucket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/bitbucket"
@@ -79,6 +82,7 @@
         >
 
         <ImageView
+            android:id="@+id/facebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/facebook"

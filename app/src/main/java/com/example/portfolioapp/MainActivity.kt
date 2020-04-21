@@ -4,10 +4,11 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.row1.*
+import kotlinx.android.synthetic.main.row2.*
+import kotlinx.android.synthetic.main.row3.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,14 +18,16 @@ class MainActivity : AppCompatActivity() {
 
         myImge.bringToFront()
 
-        youtube.setOnClickListener {
-            Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
+        showLinks()
+//        youtube.setOnClickListener {
+//
+//            val intent = Intent(Intent.ACTION_VIEW,
+//                Uri.parse("http://www.youtube.com"))
+//
+//            startActivity(intent)
+//        }
 
-            val intent = Intent(Intent.ACTION_VIEW,
-                        Uri.parse("http://www.youtube.com"))
 
-            startActivity(intent)
-        }
     }
 
     override fun onStart() {
@@ -64,6 +67,109 @@ class MainActivity : AppCompatActivity() {
 
     override fun onUserInteraction() {
         super.onUserInteraction()
+    }
+
+    fun showLinks() {
+        youtube.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://www.youtube.com"))
+
+            startActivity(intent)
+        }
+
+        whatsap.setOnClickListener {
+
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.whatsapp.com"))
+
+            startActivity(intent)
+        }
+
+        bitbucket.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://bitbucket.org"))
+
+            startActivity(intent)
+        }
+
+        facebook.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://www.facebook.com"))
+
+            startActivity(intent)
+        }
+
+        //row2
+        twitter.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://twitter.com/"))
+
+            startActivity(intent)
+        }
+
+        linkedin.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.linkedin.com/"))
+
+            startActivity(intent)
+        }
+
+        android.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.android.com"))
+
+            startActivity(intent)
+        }
+
+        skype.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.skype.com/"))
+
+            startActivity(intent)
+        }
+
+        //row3
+        gmail.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://mail.google.com"))
+
+            startActivity(intent)
+        }
+
+        google.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://www.google.com"))
+
+            startActivity(intent)
+        }
+
+        instagram.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.instagram.com/"))
+
+            startActivity(intent)
+        }
+
+        amazon.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.amazon.com/"))
+
+            startActivity(intent)
+        }
+
+
     }
 
 }
