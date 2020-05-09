@@ -1,5 +1,6 @@
 package com.example.portfolioapp
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -20,9 +21,11 @@ class MainActivity : AppCompatActivity() {
 
         myImge.bringToFront()
 
+
+        val sharedPreference =  getSharedPreferences("REGISTER_TABLE", Context.MODE_PRIVATE)
+        user_info.text = sharedPreference.getString("email", "")
+
         showLinks()
-
-
     }
 
     override fun onStart() {
@@ -175,10 +178,23 @@ class MainActivity : AppCompatActivity() {
 
         slack.setOnClickListener {
 
-            val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("http://www.slack.com"))
 
-            startActivity(intent)
+
+            val dd  = getIntent().data
+            if (dd != null ){
+
+
+                val ddd = Intent(Intent.ACTION_VIEW,
+                    dd)
+                startActivity(ddd)
+            }
+            else {
+                val intent = Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://www.slack.com"))
+                startActivity(intent)
+            }
+
+
         }
 
         tumblr.setOnClickListener {
